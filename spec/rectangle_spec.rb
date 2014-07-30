@@ -4,7 +4,7 @@ require 'spec_helper'
 describe Rectangle do
 
   before do
-    @rectangle = Rectangle.new
+    @rectangle = Rectangle.new(50, 25)
   end
 
 
@@ -14,7 +14,7 @@ describe Rectangle do
 
 
   it "should return it's area" do
-    expect(@rectangle1.area).to eq(@area)
+    @rectangle.area.should eq(1250)
   end
 
 
@@ -24,7 +24,7 @@ describe Rectangle do
 
 
   it "should return it's perimeter" do
-    expect(@rectangle1.perimeter).to eq(@perimeter)
+    @rectangle.perimeter.should eq(150)
     
   end
 

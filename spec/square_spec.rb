@@ -1,29 +1,31 @@
 require 'spec_helper'
 
-describe Sqaure do
-  # it "should return the length and width"
-  # expect (rectangle.new).to
+describe Square do
 
-  describe "#area" do
-
-
-
-    it "should return it's area" do
-      expect(@square.area).to eq(400)
-    end
-
+  before do
+    @square = Square.new(20)
   end
 
-  describe "#perimiter" do
 
 
 
-    it "should return it's perimeter" do
-      expect(@square.perimeter).to eq(80)
 
-    end
+
+
+  it "should return it's area" do
+    @square.area.should eq(400)
   end
 
+
+
+
+
+
+
+  it "should return it's perimeter" do
+    @square.perimeter.should eq(80)
+
+  end
 
 
 

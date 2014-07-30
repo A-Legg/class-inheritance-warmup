@@ -1,6 +1,6 @@
 
 
-class Sqaure
+class Square
   def initialize(side_length)
     @side_length = side_length
 
@@ -15,7 +15,7 @@ class Sqaure
 
   end
 
-sqaure1 = Sqaure.new(20)
+sqaure1 = Square.new(20)
 puts sqaure1.area
 puts sqaure1.perimeter
 
